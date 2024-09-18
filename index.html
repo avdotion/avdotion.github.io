@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>My page</title>
     <link href="./styles.css" rel="stylesheet">
+
+    <!-- Yandex.RTB -->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
   </head>
 
   <body>
@@ -14,19 +18,15 @@
       <!-- Yandex.RTB R-A-12012404-1 -->
       <div id="yandex_rtb_R-A-12012404-1"></div>
       <script>
-      window.yaContextCb.push(() => {
-        Ya.Context.AdvManager.render({
-          "blockId": "R-A-12012404-1",
-          "renderTo": "yandex_rtb_R-A-12012404-1"
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            "blockId": "R-A-12012404-1",
+            "renderTo": "yandex_rtb_R-A-12012404-1"
+          })
         })
-      })
       </script>
     </div>
 
     <script src="./script.js" type="module"></script>
-
-    <!-- Yandex.RTB -->
-    <script>window.yaContextCb=window.yaContextCb||[]</script>
-    <script src="https://yandex.ru/ads/system/context.js" async></script>
   </body>
 </html>
