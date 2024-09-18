@@ -8,3 +8,8 @@ body {
 	max-width: 800px;
 	padding: 20px;
 }
+
+.ad-container {
+	min-height: 150px;
+	border: 1px dashed #ccc;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>My page</title>
+    <title>Ad</title>
     <link href="./styles.css" rel="stylesheet">
 
     <!-- Yandex.RTB -->
@@ -13,43 +13,44 @@
 
   <body>
     <div id="root">
-      <h1>Hello, world!</h1>
+      <h1>ПИ</h1>
 
-      <p>Привет! Это моя страничка для экспериментов и инструментов.</p>
-
-      <h2>Эксперименты</h2>
-      <p><a href="./ad">Реклама</a></p>
-
-      <!-- Yandex.RTB R-A-12012645-1 -->
-      <div id="yandex_rtb_R-A-12012645-1"></div>
-      <script>
-      window.yaContextCb.push(() => {
-        Ya.Context.AdvManager.render({
-          "blockId": "R-A-12012645-1",
-          "renderTo": "yandex_rtb_R-A-12012645-1"
-        })
-      })
-      </script>
-
-      <!--AdFox START-->
-      <!--yandex_avdotion-->
-      <!--Площадка: avdotion.github.io / * / *-->
-      <!--Тип баннера: Текст-->
-      <!--Расположение: верх страницы-->
-      <div id="adfox_172667273622349073"></div>
-      <script>
-          window.yaContextCb.push(()=>{
-              Ya.adfoxCode.create({
-                  ownerId: 11627879,
-                  containerId: 'adfox_172667273622349073',
-                  params: {
-                      pp: 'g',
-                      ps: 'icgx',
-                      p2: 'q'
-                  }
-              })
+      <div class="ad-container">
+        <!-- Yandex.RTB R-A-12012645-1 -->
+        <div id="yandex_rtb_R-A-12012645-1"></div>
+        <script>
+        window.yaContextCb.push(() => {
+          Ya.Context.AdvManager.render({
+            "blockId": "R-A-12012645-1",
+            "renderTo": "yandex_rtb_R-A-12012645-1"
           })
-      </script>
+        })
+        </script>
+      </div>
+
+      <h1>Адфокс</h1>
+
+      <div class="ad-container">
+        <!--AdFox START-->
+        <!--yandex_avdotion-->
+        <!--Площадка: avdotion.github.io / * / *-->
+        <!--Тип баннера: Текст-->
+        <!--Расположение: верх страницы-->
+        <div id="adfox_172667273622349073"></div>
+        <script>
+            window.yaContextCb.push(()=>{
+                Ya.adfoxCode.create({
+                    ownerId: 11627879,
+                    containerId: 'adfox_172667273622349073',
+                    params: {
+                        pp: 'g',
+                        ps: 'icgx',
+                        p2: 'q'
+                    }
+                })
+            })
+        </script>
+      </div>
     </div>
 
     <!-- Yandex.Metrika counter -->
